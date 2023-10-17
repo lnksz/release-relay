@@ -1,0 +1,2 @@
+fedora_messaging==3.4.1
+pymsteams==0.2.2

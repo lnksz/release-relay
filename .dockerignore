@@ -1,0 +1,6 @@
+# Ignore everything
+**/*
+# Except
+!main.py
+!relayconf.toml
+!projects.toml
