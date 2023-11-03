@@ -10,9 +10,21 @@ except ImportError:
     import toml as tomllib
 
 
+def is_monitored_project(name, link, monitored_projects):
+    for project in monitored_projects:
+        if isinstance(project, str) and project == name:
+            return True
+        elif isinstance(project, list) and project[0] == name and project[1] == link:
+            return True
+        else:
+            continue
+    return False
+
+
 def post_card(msg, projects):
     project = msg['project']['name']
-    if project not in projects:
+    link = msg['project']['homepage']
+    if not is_monitored_project(project, link, projects):
         print(f"Project {project} not in projects list, ignoring")
         return
     version = msg['project']['version']
