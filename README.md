@@ -24,11 +24,17 @@ The configuration is done via environment variables:
 ```toml
 projects = [
   "avahi",
+  # Simple string of project name, if the project name is unambigous
   "bash",
   "bzip2",
+  # Array of project name and homepage, if the name is ambigous
+  ["openssl", "https://www.openssl.org"],
   "sudo",
 ]
 ```
+
+[DataGrepper](https://apps.fedoraproject.org/datagrepper/raw?topic=org.release-monitoring.prod.anitya.project.version.update) can be used to get the name/homepage for your projects.
+
 
 ## Build
 
