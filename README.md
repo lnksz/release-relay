@@ -19,7 +19,7 @@ The configuration is done via environment variables:
 
 - `FEDORA_MESSAGING_CONF`: Path to the [Fedora Messaging configuration file](https://fedora-messaging.readthedocs.io/en/stable/user-guide/quick-start.html#fedora-s-public-broker)
 - `TEAMS_WEBHOOK` : The URL of the MS Teams webhook (secret)
-- `PROJECTS` " toml array of the projects, which should be monitored
+- `PROJECTS` : path to a toml file with an array of the `projects`, which should be monitored:
 
 ```toml
 projects = [
