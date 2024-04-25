@@ -48,6 +48,10 @@ Configure your environment variable with the MS Teams webhook. You can either ru
 docker run --rm --name release-relay \
   -e TEAMS_WEBHOOK=https://outlook.office.com/webhook/... \
   release-relay
+# or using the image from DockerHub
+docker run --rm --name release-relay \
+  -e TEAMS_WEBHOOK=https://outlook.office.com/webhook/... \
+  efrgmbh/release-relay
 ```
 
 ## Internals
