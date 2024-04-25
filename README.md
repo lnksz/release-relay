@@ -1,6 +1,6 @@
 # Release Relay
 
-Relay release announcements of projects from release-monitoring.org
+Relay release announcements of projects from https://release-monitoring.org/
 
 Built on:
 
